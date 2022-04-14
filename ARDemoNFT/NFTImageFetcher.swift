@@ -9,7 +9,7 @@ import UIKit
 
 final class NFTImageFetcher {
     func fetchRandom(completion: @escaping (UIImage?) -> Void) {
-        let randomNftNumber = "\(Int.random(in: 1..<500))"
+        let randomNftNumber = "\(Int.random(in: 1..<200))"
         let path = "https://testnets-api.opensea.io/api/v1/asset/0x16baf0de678e52367adc69fd067e5edd1d33e3bf/" + randomNftNumber
         guard let url = URL(string: path) else {
             completion(nil)
